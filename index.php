@@ -10,7 +10,7 @@ require_once __DIR__."/src/conversations/SalidaConversation.php";
 
 //Extra Facebook Drivers
 //require_once __DIR__."/vendor/botman/driver-facebook/src/FacebookDriver.php";
-require_once __DIR__."/vendor/botman/driver-facebook/src/FacebookImageDriver33.php";
+require_once __DIR__."/vendor/botman/driver-facebook/src/FacebookImageDriver.php";
 require_once __DIR__."/vendor/botman/driver-facebook/src/FacebookFileDriver.php";
 
 //Configurando namespace de clases de botman (Plantillas de facebook)
@@ -74,7 +74,7 @@ $botman = BotManFactory::create($config, new DoctrineCache($doctrineCacheDriver)
 $botman->hears('^(?!.*\basesor|ASESOR|Asesor\b).*$', function (BotMan $bot) {
   $nombre = $bot->getUserWithFields(["first_name"]);
   $nombre = $nombre->getFirstName();
-  $bot -> reply("Bienvenido $nombre. te comento que nos  especializamos en la asesoria para Pensionados y Jubilados del IMSS, de igual forma contamos con asesoria para activos del IMSS. ");
+  $bot -> reply("Bienvenidossss $nombre. te comento que nos  especializamos en la asesoria para Pensionados y Jubilados del IMSS, de igual forma contamos con asesoria para activos del IMSS. ");
   $bot -> startConversation(new MenuConversation($nombre));
 });
 
