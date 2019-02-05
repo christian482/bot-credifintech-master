@@ -10,7 +10,7 @@ require_once __DIR__."/src/conversations/SalidaConversation.php";
 
 //Extra Facebook Drivers
 //require_once __DIR__."/vendor/botman/driver-facebook/src/FacebookDriver.php";
-require_once __DIR__."/vendor/botman/driver-facebook/src/FacebookImageDriver.php";
+require_once __DIR__."/vendor/botman/driver-facebook/src/FacebookImageDriver33.php";
 require_once __DIR__."/vendor/botman/driver-facebook/src/FacebookFileDriver.php";
 
 //Configurando namespace de clases de botman (Plantillas de facebook)
