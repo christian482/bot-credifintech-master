@@ -4,7 +4,7 @@ require __DIR__ . '/vendor/autoload.php';
 require __DIR__ . '/vendor/botman/botman/src/Interfaces/UserInterface.php';
 require __DIR__ . '/vendor/botman/driver-facebook/src/FacebookDriver.php';
 require __DIR__ . '/vendor/botman/botman/src/BotMan.php';
-require __DIR__ . '/vendor/botman/driver-facebook/src/FacebookDriver.php'
+require __DIR__ . '/vendor/botman/driver-facebook/src/FacebookDriver.php';
 require __DIR__ . '/vendor/botman/botman/src/Drivers/Tests/ProxyDriver.php';
 //Importando archivos necesarios
 require_once __DIR__."/src/Constantes.php";
