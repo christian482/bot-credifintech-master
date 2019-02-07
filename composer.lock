@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff107e4d2c78e7a16b748312128ad3bb",
+    "content-hash": "52f830c1b4caf64fb75b041a870f6477",
     "packages": [
         {
             "name": "botman/botman",
