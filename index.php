@@ -1,7 +1,7 @@
 <?php
 //Este archivo importa todos los drivers necesarios para imoprtarlos con "use"
 require __DIR__ . '/vendor/autoload.php';
-require __DIR__ . 'vendor/botman/botman/src/Interfaces/UserInterface.php';
+require __DIR__ . '/vendor/botman/botman/src/Interfaces/UserInterface.php';
 
 //Importando archivos necesarios
 require_once __DIR__."/src/Constantes.php";
