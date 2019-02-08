@@ -194,7 +194,7 @@ class SolicitarDatosConversation extends Conversation{
 
 
       }
-      $this->enviarASharSpring($p, $sv);
+      $this->enviarASharSpring($p, $sv,$url);
       $this->say('Perfecto, te contactara un asesor para darte a conocer los beneficios que tenemos para ti. ' );
     });
   }
@@ -240,17 +240,18 @@ class SolicitarDatosConversation extends Conversation{
     $id = $fromCRMarr["id"];
 
     $p->id = $id;
-    $this->enviarASharSpring($p, $sv);
+    $this->enviarASharSpring($p, $sv,'');
   }
 
-  public function enviarASharSpring($p, $sv){
+  public function enviarASharSpring($p, $sv,$linkFoto){
     $params = array(
               'objects' => array (
                 array(
                   'firstName'		=> $p->nombre,
                   'lastName'		=> $p->apellido,
                   'phoneNumber'	=> $p->telefono,
-                  "companyName"   => $sv,
+                  'companyName'   => $sv,
+                  'website'       => $linkFoto,
                   'emailAddress'	=> $p->email
                 )
               )
