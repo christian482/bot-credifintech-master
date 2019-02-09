@@ -47,7 +47,7 @@ DriverManager::loadDriver(\Botman\Drivers\Facebook\FacebookFileDriver::class);
 $config = [
   'facebook'=> [
         'token' => 'EAAGrT16HtJgBAPbslwpr637H9ZBrPY6oNWfoQxHBkoZCzpZCE1VbGcHKfW8ZAigtTdJgmZAK0h1gS0TBYDvEZAxrpZB7v8EWFIU4lX2D1NJwqyPZAboAVHlf2mNraS9Uzw3kpeEHRdWzTM0ZC6rbscEOGD5Re4rQeFUBA7lG1XTbQHwbHj0AzKAZBT',
-        'app_secret' => 'e4647b87a6b18da6803bddc3b3349674', 
+        'app_secret' => 'e4647b87a6b18da6803bddc3b3349674',
         'verification'=>'d8wkg9wkflaaeha54qyhf5yadfjaibs3iwro203852',
     ]
   /*
@@ -80,9 +80,9 @@ $doctrineCacheDriver = new FilesystemCache(__DIR__);
 $botman = BotManFactory::create($config, new DoctrineCache($doctrineCacheDriver));
 
 $botman->hears('^(?!.*\basesor|ASESOR|Asesor\b).*$', function (BotMan $bot) {
-  //$nombre = $bot->getUserWithFields(["first_name"]);
-  //$nombre = $nombre->getFirstName();
-  $bot -> reply("Bienvenido te comento que nos  especializamos en la asesoria para Pensionados y Jubilados del IMSS, de igual forma contamos con asesoria para activos del IMSS. ");
+  $nombre = $bot->getUserWithFields(["first_name"]);
+  $nombre = $nombre->getFirstName();
+  $bot -> reply("Bienvenidossss $nombre te comento que nos  especializamos en la asesoria para Pensionados y Jubilados del IMSS, de igual forma contamos con asesoria para activos del IMSS. ");
   $bot -> startConversation(new MenuConversation($nombre));
 });
 
