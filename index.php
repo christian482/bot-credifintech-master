@@ -45,7 +45,12 @@ DriverManager::loadDriver(\Botman\Drivers\Facebook\FacebookImageDriver::class);
 DriverManager::loadDriver(\Botman\Drivers\Facebook\FacebookFileDriver::class);
 
 $config = [
-  ///*
+  'facebook'=> [
+        'token' => 'EAAGrT16HtJgBAPbslwpr637H9ZBrPY6oNWfoQxHBkoZCzpZCE1VbGcHKfW8ZAigtTdJgmZAK0h1gS0TBYDvEZAxrpZB7v8EWFIU4lX2D1NJwqyPZAboAVHlf2mNraS9Uzw3kpeEHRdWzTM0ZC6rbscEOGD5Re4rQeFUBA7lG1XTbQHwbHj0AzKAZBT',
+        'app_secret' => 'e4647b87a6b18da6803bddc3b3349674', 
+        'verification'=>'d8wkg9wkflaaeha54qyhf5yadfjaibs3iwro203852',
+    ]
+  /*
   'facebook'=> [
     //Botencio McBot
     'token' => Constantes::generateTokenArray()["T_BOTENCIO"],
